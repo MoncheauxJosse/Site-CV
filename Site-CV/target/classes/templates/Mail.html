@@ -35,7 +35,7 @@
 
 	
 <!-- 	fin liste/Début du formulaire -->
-
+<hr>
 	<section id="services" class="services-section section-global-wrapper">
 		<div class="container">
 			<div class="row">
@@ -44,11 +44,8 @@
 					<p class="services-header-body">
 						<em>De cette page je recevrais votre message sur ma boite mail, n'oubliez pas d'ajouter un moyen de vous recontacter ;)</em>
 					</p>
-					<hr>
 				</div>
-			</div>
-		</div>
-	</section>
+	<hr>
 					          <div class="container-fluid"> 					           					       					         		
 					          <form th:action="@{/EnvoyerMail}" th:method="post">					          
 					          <div class="modal-body">
@@ -64,9 +61,11 @@
 					          		<input hidden="hidden" th:value="menestrell" name="id">-->
 								</div>
 					            <button type="submit" class="btn btn-primary" >Envoyer</button>
-					            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
 					          </form>
 					        </div> 
+					        </div>
+		</div>
+	</section>
 					       
 				     
 	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
