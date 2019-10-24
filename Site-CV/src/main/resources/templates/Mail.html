@@ -36,13 +36,21 @@
 	
 <!-- 	fin liste/Début du formulaire -->
 
-				   	
-					          <div class="container-fluid"> 
-					           
-					            <h1 style="text-align:center">Email</h1>
-					         		
-					          <form th:action="@{/EnvoyerMail}" th:method="post">
-					          
+	<section id="services" class="services-section section-global-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="services-header">
+					<h1 class="services-header-title">Email</h1>
+					<p class="services-header-body">
+						<em>De cette page je recevrais votre message sur ma boite mail, n'oubliez pas d'ajouter un moyen de vous recontacter ;)</em>
+					</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+					          <div class="container-fluid"> 					           					       					         		
+					          <form th:action="@{/EnvoyerMail}" th:method="post">					          
 					          <div class="modal-body">
 					            <h4>Sujet :</h4>
 					            <textarea rows="1" cols="60" name="subject" class="form-control"></textarea>
