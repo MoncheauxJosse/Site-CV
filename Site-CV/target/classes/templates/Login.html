@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <link rel="icon" href="../image/logoCV.png">
+<title>Site CV</title>
+
+<!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Custom styles for this template -->
+    <link href="../bootstrap/css/conection.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<form th:method="post" th:action="Login" >
+  <img class="mb-4" src="../image/logoCV.png" alt="" width="72" height="72">
+	<div> <h1 class="h3 mb-3 font-weight-normal">Veuillez inscrire les informations et continué</h1>
+     <fieldset>
+      <p>Nom (Facultatif) </br> <input type="text" name="nom" /></p>
+      <p>Société (falcultatif)</br> <input type="text" name="societe" /></p>
+   </div>
+               <div><button class="btn btn-lg btn-primary btn-block"  value="Creer" type="submit" OnClick="validité()">Continuer</button></div>
+      <p class="mt-5 mb-3 text-muted">&copy; Site/CV Josse Moncheaux</p>
+   
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+        <!-- meta data & title -->
+        <meta charset="utf-8">
+        <title>Email</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Favicon et touche icones -->
+        <link rel="icon" href="../image/logoCV.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/apple-touch-icon-57-precomposed.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">   <!-- les icones des cubes-->
+        <link rel="stylesheet" href="../css/animate.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+  <body>
+
+    <!-- menu -->
+        
+<div th:insert="~{Menu:: copyMenu}"></div>
+
+	
+<!-- 	fin liste/Début du formulaire -->
+
+				   	
+					          <div class="container-fluid"> 
+					           
+					            <h1 style="text-align:center">Email</h1>
+					         		
+					          <form th:action="@{/EnvoyerMail}" th:method="post">
+					          
+					          <div class="modal-body">
+					            <h4>Sujet :</h4>
+					            <textarea rows="1" cols="60" name="subject" class="form-control"></textarea>
+					          </div>
+					          <div class="modal-body">
+					            <h4>Votre message :</h4>
+					            <textarea rows="5" cols="60" name="message" class="form-control"></textarea>
+					          </div>
+					          <div class="modal-footer">
+					          		<!--  <input hidden="hidden" th:value="Lordssly@gmail.com" name="email">
+					          		<input hidden="hidden" th:value="menestrell" name="id">-->
+								</div>
+					            <button type="submit" class="btn btn-primary" >Envoyer</button>
+					            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+					          </form>
+					        </div> 
+					       
+				     
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/wow.min.js"></script> 
+    <script>
+      new WOW().init();
+    </script>
+</body>
+</html>

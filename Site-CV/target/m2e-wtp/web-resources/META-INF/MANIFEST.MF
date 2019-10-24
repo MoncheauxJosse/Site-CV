@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: fil_rouge_web_app_ha_josse
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: admin
+Implementation-Vendor-Id: fr.afpa.projet.fil.rouge
+Build-Jdk: 1.8.0_191
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/fil_rouge_ha_josse/fil_rouge_web_app_ha_josse
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+<!-- meta data & title -->
+<meta charset="utf-8">
+<title>Accueil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicon et touche icones -->
+<link rel="icon" href="../image/logoCV.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+	href="../ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114"
+	href="../ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+	href="../ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="../ico/apple-touch-icon-57-precomposed.png">
+
+<!-- CSS -->
+<link rel="stylesheet"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans'
+	rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Raleway"
+	rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+<!--   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<!-- les icones des cubes-->
+<link rel="stylesheet" href="../css/animate.min.css">
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+	<!-- Header -->
+
+	<div th:insert="~{Menu:: copyMenu}"></div>
+	<!-- End Header -->
+
+
+	<!-- debut #carousel-section -->
+	<!--     <section id="carousel-section" class="section-global-wrapper">  -->
+	<!--         <div class="container-fluid-kamn"> -->
+	<!--             <div class="row"> -->
+	<!--                 <div id="carousel-1" class="carousel slide" data-ride="carousel"> -->
+
+	<!--                     Indicateur -->
+	<!--                     <ol class="carousel-indicators visible-lg"> -->
+	<!--                         <li data-target="#carousel-1" data-slide-to="0" class="active"></li> -->
+	<!--                         <li data-target="#carousel-1" data-slide-to="1"></li> -->
+	<!--                         <li data-target="#carousel-1" data-slide-to="2"></li> -->
+	<!--                     </ol> -->
+
+	<!--                     Wrapper for slides -->
+	<!--                     <div class="carousel-inner" role="listbox"> -->
+	<!--                         debut Slide 1 -->
+	<!--                         <div class="item active"> -->
+	<!--                             <img src="../img/slider/tec-programador.jpg" height="400" alt="Image of first carousel"> -->
+	<!--                             <div class="carousel-caption"> -->
+	<!--                                 <h3 class="carousel-title hidden-xs">lollll</h3> -->
+	<!--                                 <p class="carousel-body"></p> -->
+	<!--                             </div> -->
+	<!--                         </div> -->
+	<!--                         fin Slide 1 -->
+
+	<!--                         debut Slide 2 -->
+	<!--                         <div class="item"> -->
+	<!--                             <img src="../img/slider/caroussel_formation.jpg" height="400" alt="Image of second carousel"> -->
+	<!--                             <div class="carousel-caption"> -->
+	<!--                                 <h3 class="carousel-title hidden-xs"></h3> -->
+	<!--                                 <p class="carousel-body"></p> -->
+	<!--                             </div> -->
+	<!--                         </div> -->
+	<!--                         fin Slide 2 -->
+
+	<!--                         debut Slide 3 -->
+	<!--                         <div class="item"> -->
+	<!--                             <img src="../img/slider/laptop-2557468_1920.jpg"  height="400" alt="Image of third carousel"> -->
+	<!--                             <div class="carousel-caption"> -->
+	<!--                                 <h3 class="carousel-title hidden-xs"></h3> -->
+	<!--                                 <p class="carousel-body"></p> -->
+	<!--                             </div> -->
+	<!--                         </div> -->
+	<!--                         fin Slide 3 -->
+	<!--                     </div> -->
+
+	<!--                     Controls -->
+	<!--                     <a class="left carousel-control" href="#carousel-1" data-slide="prev"> -->
+	<!--                         <span class="glyphicon glyphicon-chevron-left"></span> -->
+	<!--                     </a> -->
+	<!--                     <a class="right carousel-control" href="#carousel-1" data-slide="next"> -->
+	<!--                         <span class="glyphicon glyphicon-chevron-right"></span> -->
+	<!--                     </a> -->
+	<!--                 </div> -->
+	<!--             </div> -->
+	<!--         </div> -->
+	<!--     </section> -->
+
+
+	<!-- caroussel 2 -->
+
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img class="d-block w-100" src="../img/slider/tec-programadorretouche.jpg" alt="Un tigre">
+				<div class="carousel-caption">
+					<h1>accueil</h1>
+				</div>
+			</div>
+			<div class="item">
+				<a href="/Stage"><img class="d-block w-100"
+					src="../img/slider/agenda-1355316_1920.jpg" alt="Un tigre">
+				<div class="carousel-caption">
+					<h1> Voir mon rapport de stage</h1>
+				</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="/AjouterUtilisateur"><img class="d-block w-100"
+					src="../img/slider/laptop-2557468_1920retouche.jpg" alt="Un tigre">
+				<div class="carousel-caption">
+					<h1>tester mon formulaire</h1>
+				</div>
+				</a>
+			</div>
+		</div>
+		
+		<a class="left carousel-control" href="#carousel"  role="button"  data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			
+		</a> <a class="right carousel-control" href="#carousel"  role="button"  data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+	<!-- <div class="carousel" data-ride="carousel"> -->
+	<!--   <div class="carousel-inner"> -->
+	<!--     <div class="carousel-item active"> -->
+	<!--       <img class="d-block w-100" src="../img/slider/caroussel_formation.jpg"  alt="Un tigre"> -->
+	<!--     </div> -->
+	<!--     <div class="carousel-item"> -->
+	<!--       <img class="d-block w-100" src="../img/slider/caroussel_formation.jpg"  alt="Un tigre"> -->
+	<!--     </div> -->
+	<!--     <div class="carousel-item"> -->
+	<!--       <img class="d-block w-100" src="../img/slider/laptop-2557468_1920.jpg" alt="Un tigre"> -->
+	<!--     </div> -->
+	<!--   </div> -->
+	<!-- </div> -->
+	<!-- fin #carousel-section -->
+
+
+	<!-- debut #services-section -->
+	<section id="services" class="services-section section-global-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="services-header">
+					<h3 class="services-header-title">Accueil</h3>
+					<p class="services-header-body">
+						<em>Bienvenu sur mon CV </em>
+					</p>
+					<hr>
+				</div>
+			</div>
+
+			<!-- debut haut Services -->
+			<div class="row services-row services-row-head services-row-1">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated fadeInLeft"
+						data-wow-offset="40">
+						<a href="/Mail">
+							<p class="services-icon">
+								<span class="fa fa-envelope fa-5x"></span>
+							</p>
+							<!-- les icones se trouve dans  font-awesome  ("comment" peut renpalcer "envelope")-->
+							<h4 class="services-title">Contactez moi</h4>
+							<p class="services-body">Contactez moi sur mon mails</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated zoomIn"
+						data-wow-offset="40">
+						<a href="/CV">
+							<p class="services-icon">
+								<i class="fa fa-book fa-5x"></i>
+							</p>
+							<h4 class="services-title">Mon CV</h4>
+							<p class="services-body">Retrouvez mon CV ici</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated zoomIn"
+						data-wow-offset="40">
+						<a href="/#">
+							<p class="services-icon">
+								<i class="fa fa-thumbs-o-up fa-5x"></i>
+							</p>
+							<h4 class="services-title">En cours</h4>
+							<p class="services-body">En cours</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--fin haut Services  -->
+
+			<!-- debut bas Services  -->
+			<div class="row services-row services-row-tail services-row-2">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated fadeInLeft"
+						data-wow-offset="40">
+						<a href="/AjouterUtilisateur">
+							<p class="services-icon">
+								<span class="fa fa-user fa-5x"></span>
+							</p>
+							<h4 class="services-title">Tester mon Crud</h4>
+							<p class="services-body">Tester le crud,
+								Creat,Read,Put,Delete</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated zoomIn"
+						data-wow-offset="40">
+						<a href="/Client">
+							<p class="services-icon">
+								<i class="fa fa-eye fa-5x"></i>
+							</p>
+							<h4 class="services-title">Voir les intérréssés</h4>
+							<p class="services-body">voir toutes les personnes qui ont
+								vue mon site</p>
+						</a>
+					</div>
+				</div>
+				<!-- class reponsive en zoomIn-->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="services-group wow animated zoomIn"
+						data-wow-offset="40">
+						<a href="/#">
+							<p class="services-icon">
+								<i class="fa fa-cube fa-5x"></i>
+							</p>
+							<h4 class="services-title">En cours</h4>
+							<p class="services-body">En cours</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--fin bas Serivces  -->
+
+		</div>
+	</section>
+	<!-- fin #services-section -->
+	<!--      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<!--  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<!--probleme appel  -->
+	<script src="bootstrap/jsp/bootstrap.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+</html>
