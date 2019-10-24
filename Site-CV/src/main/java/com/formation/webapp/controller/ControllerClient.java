@@ -105,8 +105,5 @@ public String VoirClient (Model model) {
 	}
 	
 	
-	@GetMapping("/MaFormation")
-	public String MaFormation () {
-		return "MaFormation";
-	}
+
 }
