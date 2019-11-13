@@ -20,7 +20,6 @@ import com.formation.webapp.service.IUtilisateurService;
 
 
 @Controller
-//@RequestMapping("/Login")
 public class ControllerClient {
 	
 	@Autowired
