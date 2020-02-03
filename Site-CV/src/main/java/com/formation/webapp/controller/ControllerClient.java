@@ -56,6 +56,10 @@ public String VoirClient (Model model) {
 		return "Accueil";
 	}
 	
+	@GetMapping("/EnCours")
+	public String EnCours () {
+		return "EnCours";
+	}
 
 	
 	@GetMapping("/Profil")
