@@ -42,12 +42,14 @@
 			<tr>
 				<th>Nom</th>
 				<th>Societe</th>
+				<th>Date</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr th:each="login : ${listeLogin}">
 				<td th:utext="${login.nom}">...</td>
 				<td th:utext="${login.societe}">...</td>
+				<td th:utext="${login.date}">...</td>
 		</tr>
 		</tbody>
 <!-- 		fin personnaliser -->

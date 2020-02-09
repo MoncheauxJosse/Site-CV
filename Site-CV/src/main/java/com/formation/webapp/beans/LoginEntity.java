@@ -2,6 +2,7 @@ package com.formation.webapp.beans;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,10 +24,11 @@ public class LoginEntity implements Serializable {
 
 	@Id
 	@GeneratedValue(generator = "Login_generator")
-	@SequenceGenerator(name = "login_generator", sequenceName = "login_sequence", initialValue = 3, allocationSize = 1)
+	@SequenceGenerator(name = "login_generator", sequenceName = "login_sequence", initialValue = 4, allocationSize = 1)
 	private Long id;
 	private String nom;
 	private String societe;
+	private String dat;
 
 	
 	public LoginEntity() {
@@ -38,7 +40,7 @@ public class LoginEntity implements Serializable {
 		this.id = e.getId();
 		this.nom = e.getNom();
 		this.societe = e.getSociete();
-
+		this.dat = Creationdate();
 	}
 	
 	public LoginPojo convertToEntity(LoginEntity eb) {
@@ -46,7 +48,7 @@ public class LoginEntity implements Serializable {
 		conv.setId(eb.getId());
 		conv.setNom(eb.getNom());
 		conv.setSociete(eb.getSociete());
-		
+		conv.setDate(eb.getDate());
 		
 		return conv;
 	}
@@ -92,8 +94,24 @@ public class LoginEntity implements Serializable {
 		}
 		return resultat;
 	}
+	
+	public String Creationdate() {
+		 Date date = new Date( System.currentTimeMillis() );
+		    SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy hh:mm:ss" );
+		    String dateconv = sdf.format( date );
+		     
+		return dateconv;
+	}
+	
+	public String getDate() {
+		if(this.dat == null) {
+    		this.setSociete("Secret");
+		}
+		return dat;
+	}
 
-
-
+	public void setDate(String dat) {
+		this.dat = dat;
+	}
 }
 

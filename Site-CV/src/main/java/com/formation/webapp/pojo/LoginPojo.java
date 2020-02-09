@@ -1,6 +1,5 @@
 package com.formation.webapp.pojo;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import javax.validation.constraints.Size;
@@ -14,6 +13,7 @@ public class LoginPojo {
 	private String nom;
 	@Size(min = 2, max = 255)
 	private String societe;
+	private String date;
 	
 	
 	
@@ -95,6 +95,7 @@ public class LoginPojo {
 		this.id = e.getId();
 		this.societe=e.getSociete();
 		this.nom = e.getNom();
+		this.date = e.getDate();
 	}
 
 
@@ -116,9 +117,27 @@ public class LoginPojo {
 		conv.setId(eb.getId());
 		conv.setNom(eb.getNom());
 		conv.setSociete(eb.getSociete());
-	
 		
 		return conv;
+	}
+
+
+
+
+
+	public String getDate() {
+		if(this.date == null) {
+    		this.setDate("Secret");
+		}
+		return date;
+	}
+
+
+
+
+
+	public void setDate(String date) {
+		this.date = date;
 	}
 
 }
