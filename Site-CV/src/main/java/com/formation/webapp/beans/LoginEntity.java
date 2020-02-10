@@ -5,6 +5,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -97,7 +98,7 @@ public class LoginEntity implements Serializable {
 	
 	public String Creationdate() {
 		 Date date = new Date( System.currentTimeMillis() );
-		    SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy hh:mm:ss" );
+		    SimpleDateFormat sdf = new SimpleDateFormat( "dd/MM/yyyy hh:mm:ss", Locale.FRENCH );
 		    String dateconv = sdf.format( date );
 		     
 		return dateconv;
